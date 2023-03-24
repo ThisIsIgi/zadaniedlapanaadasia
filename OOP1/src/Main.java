@@ -12,6 +12,10 @@ public class Main {
         list.add(new Gaz("Zywiec", (float) 1.89, "Mocny gaz"));
         list.add(new Bezgazu("Alkaida", (float) 1.58, "alkaiczna"));
 
+        
+        for (Napoje z : list) {
+            System.out.println(z.getClass().getSimpleName());
+        }
 
         list.sort(new Comparator<Napoje>() {
             @Override
